@@ -1,0 +1,48 @@
+Prob13
+My name is Kumpei Doi, and my ID number is 62413535.
+1:Hello World!
+2:Hello World!
+3:Hello World!
+Goodbye World!
+
+
+Prob14
+i = 5
+j = 11
+k = -6
+理由：kを求める式に代入する際に、iは1を足された5に、jも1を足された11に置き換えられる。これは前置インクリメント演算子がついているからである。そして、kが5-11=-6となり、この３つが出力される。
+
+
+Prob15
+xはfalseとなる。
+理由：j==4は10==4なのでfalse
+　　　i>0は4>0なのでtrue
+　　　j<0は10<0なのでfalseとなる。
+　　　したがって、false&&true||falseすなわちfalse||falseとなるからxはfalseと出力される。
+
+
+Prob16
+1inch is 2.54cm.
+2inch is 5.08cm.
+3inch is 7.62cm.
+4inch is 10.16cm.
+5inch is 12.7cm.
+6inch is 15.24cm.
+7inch is 17.78cm.
+8inch is 20.32cm.
+9inch is 22.86cm.
+10inch is 25.4cm.
+11inch is 27.94cm.
+12inch is 30.48cm.
+13inch is 33.02cm.
+14inch is 35.56cm.
+15inch is 38.1cm.
+16inch is 40.64cm.
+17inch is 43.18cm.
+18inch is 45.72cm.
+19inch is 48.26cm.
+20inch is 50.8cm.
+
+
+Prob17
+14
