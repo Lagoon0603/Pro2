@@ -1,7 +1,7 @@
 public class MyPoint {
-    int x;
-    int y;
-    double getDistance() {
+    public int x;
+    public int y;
+    public double getDistance() {
         return Math.sqrt(x * x + y * y);
     }
 }
