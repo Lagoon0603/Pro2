@@ -1,0 +1,48 @@
+Prob56
+Made a new Car instance
+Made a new Car instance
+Set number to 508 and fuel efficiency to 13.0
+100.0 liters of gas was added
+Car now has 100.0 liters of gas
+Set number to 513 and fuel efficiency to 23.5
+150.0 liters of gas was added
+Car now has 150.0 liters of gas
+
+Anita could not get on the bus
+Bill now has 130 yen
+Charlie now has 50 yen
+Dale could not get on the bus
+Erin now has 50 yen
+
+Bus (Num: 508) current status
+Bill
+110
+
+Bus (Num: 513) current status
+Charlie
+Erin
+190
+
+Felix now has 70 yen
+Grace could not get on the bus
+Helen now has 110 yen
+Isaac now has 420 yen
+
+Bus (Num: 508) current status
+Bill
+Felix
+190
+
+Bus (Num: 513) current status
+Charlie
+Erin
+Helen
+Isaac
+380
+
+Anita was not on the bus
+Bill got off the bus
+
+Bus (Num: 508) current status
+Felix
+190
