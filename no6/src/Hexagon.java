@@ -3,8 +3,8 @@ public class Hexagon {
         for (int i = 0; i < 6; i++) {
             v.draw(t);
             t.penUp();
-            t.go(50);      // fd から go に修正
-            t.rotate(60);  // rt から rotate に修正
+            t.go(50);
+            t.rotate(60);
         }
     }
 
