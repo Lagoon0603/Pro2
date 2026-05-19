@@ -1,10 +1,9 @@
 public class HexVertex extends Vertex {
-    @Override
     public void draw(Turtle t) {
         t.penDown();
         for (int i = 0; i < 6; i++) {
-            t.fd(15);
-            t.rt(60);
+            t.go(15);      // fd から go に修正
+            t.rotate(60);  // rt から rotate に修正
         }
     }
 }

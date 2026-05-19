@@ -1,12 +1,12 @@
 public class CrossVertex extends Vertex {
-    @Override
     public void draw(Turtle t) {
         t.penDown();
         for (int i = 0; i < 4; i++) {
-            t.fd(10);
-            t.rt(180);
-            t.fd(10);
-            t.lt(90);
+            t.go(10);       // fd から go に修正
+            t.rotate(180);  // rt から rotate に修正
+            t.go(10);       // fd から go に修正
+            t.rotate(180);  // rt から rotate に修正
+            t.rotate(90);   // rt から rotate に修正
         }
     }
 }
