@@ -1,0 +1,46 @@
+Prob72
+a)
+違反箇所：A1クラスのmainメソッド内のp.getY()
+理由：PointクラスのgetY()メソッドは、アクセス修飾子が指定されていないパッケージプライベートのため、同一パッケージ内からのみアクセス可能である。
+　　　A1クラスはPointクラスとは異なるパッケージに属しているため、アクセス制限に違反する。
+
+b)
+違反箇所：Point3DクラスのmoveYメソッド内のy += dy;
+理由：Pointクラスのフィールドyはprivate修飾子が指定されているため、Pointクラスの内部からのみアクセス可能である。
+　　　Point3DはPointのサブクラスであるが、privateフィールドにはアクセスできないためアクセス制限に違反する。
+
+c)
+違反箇所：ColorPointクラスのyposメソッド内のgetY()
+理由：PointクラスのgetY()メソッドはパッケージプライベートであり、同一パッケージ内からしかアクセスできない。
+　　　ColorPointクラスはPointクラスのサブクラスであるが、異なるquestionパッケージに属しているため、アクセス制限に違反する。
+
+
+Prob73
+0. JDK 26
+
+1.
+a) java.awt.geom.Point2D
+b) java.io.Serializable, java.lang.Cloneable
+c) equals, getLocation, getX, getY, move, setLocation, toString, translate
+
+2.
+a)
+intはJavaの基本データ型であり、純粋な数値データのみを保持する。
+一方、Integerは参照型のクラスであり、int型の値をオブジェクトとして保持する。
+これにより、Integerオブジェクトはメソッドを持ったり、nullを代入したり、Genericsの型パラメータとして使用したりすることができる。
+
+b)
+AtomicInteger, AtomicLong, BigDecimal, BigInteger, Byte, Double, DoubleAccumulator, DoubleAdder, Float, Long, LongAccumulator, LongAdder, Short
+
+3.
+java.util.Randomクラス
+
+4.
+String aNewString = aString.substring(1, 6);
+
+
+Prob74
+誤りの箇所：list.add(new Point());
+理由：変数listはGenericsを用いて ArrayList<String>として宣言・生成されているため、このリストにはString型のオブジェクトの
+みを追加することができる。
+　　　PointクラスはString型ではないため、要素として追加しようとすると型の不一致となりコンパイルエラーが発生する。
