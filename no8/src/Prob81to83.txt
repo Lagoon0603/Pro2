@@ -1,0 +1,71 @@
+Prob81
+
+Throw1.java
+実行結果
+Program = Java
+OK! Let's program!
+Exception in thread "main" java.lang.Exception: I don't know Smalltalk!
+	at Throw1.methodA(Throw1.java:4)
+	at Throw1.main(Throw1.java:10)
+
+理由
+methodA("Java") は正常に実行され、"Program = Java" を出力後、mainメソッドに戻り "OK! Let's program!" が出力される。
+次に methodA("Smalltalk") が呼び出されると、引数が "Smalltalk" なので Exception が throw される。
+mainメソッドにはこの例外を捕捉する try-catch ブロックがないため、プログラムは異常終了し、スタックトレースが出力される。
+
+
+Throw2.java
+実行結果
+Program = Java
+OK! Let's program!
+I don't know Smalltalk!
+The actual end
+
+理由
+methodA("Smalltalk") で発生した Exception は、mainメソッド内の try-catch ブロックによって catch される。
+次に、catch ブロック内で例外のメッセージ (e.getMessage()) である "I don't know Smalltalk!" が出力される。
+例外が適切に処理されたためプログラムは異常終了せず、その後の "The actual end" も正常に出力される。
+
+
+Throw3.java
+実行結果
+The finally program is Java
+Program = Java
+OK! Let's program!
+The finally program is Smalltalk
+I don't know Smalltalk!
+The actual end
+
+理由
+methodA("Java") 呼び出し時、tryブロック内が正常に終了しても finally ブロックは必ず実行されるため "The finally program is Java" と出力される。
+その後 "Program = Java" を出力する。
+次に methodA("Smalltalk") を呼び出すと Exception が throw されるが、メソッドを抜ける前に必ず finally ブロックが実行されるため "The finally program is Smalltalk" が出力される。
+その後、例外は呼び出し元のmainメソッドに伝播し、catch ブロックで "I don't know Smalltalk!" が出力され、最後に "The actual end" が出力される。
+
+Prob82
+Throw4.java
+実行結果
+Before a
+Before b
+Before c
+c: finally
+b: finally
+a: java.lang.NumberFormatException: For input string: "6.12"
+a: finally
+After a
+main: finally
+
+理由
+メソッドc()で "6.12" をIntegerに変換しようとして NumberFormatException が発生し throw される。
+c()のfinallyブロックが実行され "c: finally" を出力して例外がメソッドb()へ伝播する。
+b()では ArithmeticException しか catch しないため、例外は処理されず b()のfinallyブロック "b: finally" が実行された後、メソッドa()へ伝播する。
+a()では NumberFormatException を catch するため、"a: " とともに例外の詳細メッセージが出力される。
+その後 a()のfinallyブロック "a: finally" が実行され、a()で例外が処理されたため、呼び出し元のmain()は正常に処理を継続し "After a" を出力する。
+最後にmain()のfinallyブロック "main: finally" が実行される。
+
+Prob83
+Throw5.java
+理由
+catch ブロックは記述された順に上から評価されるが、最初の catch ブロックで指定されている Exception クラスは、次の catch ブロックで指定されている ArithmeticException クラスのスーパークラスである。
+そのため、ArithmeticException が発生しても最初の Exception の catch ブロックで捕捉されてしまい、2つ目の catch ブロックには絶対に到達できない。
+Javaでは到達不能コードが存在する場合、コンパイルエラーとなるからである。
