@@ -1,0 +1,26 @@
+Prob92
+
+4Keio 10University 7carries 2on 3the 6legacy 2of 3its 7founder 7Yukichi 8Fukuzawa
+2as 2it 7strives 2to 2be 2an 11institution 5where 11individuals 5think
+14independently, 4take 7action, 3and 3set 3the 6course 2of 5their 3own 3the 7future.
+5Since 3its 8founding 2in 51858, 4Keio 3has 4been 6guided 2by 3the 10principles
+2of 12independence 3and 13self-respect. 2At 5Keio, 2we 5don't 4stop 2at
+6simply 9acquiring 8academic 10knowledge, 6having 4long 10recognized
+3the 10importance 2of 8applying 3the 6fruits 2of 3its 11scholarship 2to 8society.
+2As 1a 13comprehensive 11educational 11institution 12encompassing
+3all 6levels 4from 10elementary 6school 2to 8graduate 7school,
+4Keio 6brings 8together 9students, 8faculty, 6staff, 3and 6alumni
+4into 1a 6shared 9community 2of 9learning, 5where 4each 6member 11contributes
+2to 3the 8creation 2of 3new 5value 2in 5their 10respective 7fields. 2As 4Keio
+9continues 2to 6engage 4with 7society 7through 10education, 9research,
+3and 11healthcare, 2it 2is 4also 8pursuing 1a 7variety 2of 3new 12initiatives,
+4such 2as 8becoming 2an 10"AI-Native 12University," 2to 9cultivate
+3the 9knowledge 3and 9skillsets 4that 3can 4meet 3the 8changing 7demands
+2of 3the 6times.
+
+
+Prob93
+
+  3    38 aaa.txt
+  1    12 bbb.txt
+  4    50 total
